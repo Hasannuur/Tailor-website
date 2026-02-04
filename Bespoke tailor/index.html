@@ -1,0 +1,344 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TailorShop - Premium Tailoring Services</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
+    <link rel="icon" type="image/x-icon" href="images/favicon.ico">
+</head>
+<body class="light-mode">
+    <!-- ================= HEADER ================= -->
+    <header class="header">
+        <div class="container">
+            <!-- Logo -->
+            <a href="index.html" class="logo">
+                Tailor<span class="highlight">Shop</span>
+            </a>
+
+            <!-- Desktop Navigation -->
+            <nav class="desktop-nav">
+                <a href="index.html" class="nav-link">Home</a>
+                <a href="about.html" class="nav-link">About</a>
+                <a href="signup.html" class="nav-link">sign up</a>
+            </nav>
+
+            <!-- Header Right Section -->
+            <div class="header-right">
+                <!-- Theme Toggle -->
+                <button class="theme-toggle" id="themeToggle">
+                    <svg class="theme-icon" id="themeIcon" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <path id="sun-icon" d="M12 17a5 5 0 1 0 0-10 5 5 0 0 0 0 10z"/>
+                        <path d="M12 1v2M12 21v2M4.22 4.22l1.42 1.42M18.36 18.36l1.42 1.42M1 12h2M21 12h2M4.22 19.78l1.42-1.42M18.36 5.64l1.42-1.42"/>
+                    </svg>
+                </button>
+
+                <!-- Auth Area -->
+                <div class="auth-area" id="authArea">
+                    <a href="signup.html" class="auth-btn">Get Started</a>
+                </div>
+            </div>
+
+            <!-- Mobile Menu Button -->
+            <button class="mobile-menu-btn" id="mobileMenuBtn">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <path d="M3 12h18M3 6h18M3 18h18"/>
+                </svg>
+            </button>
+        </div>
+
+        <!-- Mobile Menu -->
+        <div class="mobile-menu" id="mobileMenu">
+            <button class="close-menu-btn" id="closeMenuBtn">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <path d="M18 6L6 18M6 6l12 12"/>
+                </svg>
+            </button>
+            <nav class="mobile-nav">
+                <a href="index.html" class="mobile-nav-link">Home</a>
+                <a href="shop.html" class="mobile-nav-link">Shop</a>
+                <a href="signup.html" class="mobile-nav-link">Sign In</a>
+            </nav>
+        </div>
+    </header>
+
+    <!-- ================= HERO SECTION ================= -->
+    <main class="main-content">
+        <section class="hero-section">
+            <!-- Navigation Buttons -->
+            <button class="slider-nav-btn prev-btn">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <path d="M15 18l-6-6 6-6"/>
+                </svg>
+            </button>
+
+            <button class="slider-nav-btn next-btn">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <path d="M9 18l6-6-6-6"/>
+                </svg>
+            </button>
+
+            <!-- Hero Slider -->
+            <div class="swiper hero-swiper">
+                <div class="swiper-wrapper">
+                    <!-- Slide 1 -->
+                    <div class="swiper-slide">
+                        <div class="hero-slide" style="background-image: url('https://images.unsplash.com/photo-1521334884684-d80222895322')">
+                            <div class="slide-overlay"></div>
+                            <div class="hero-content">
+                                <h1 class="hero-title">Premium Tailored Suits</h1>
+                                <p class="hero-description">Crafted with precision for modern elegance.</p>
+                                <a href="shop.html" class="hero-btn">Shop Now</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Slide 2 -->
+                    <div class="swiper-slide">
+                        <div class="hero-slide" style="background-image: url('https://images.unsplash.com/photo-1503342217505-b0a15ec3261c')">
+                            <div class="slide-overlay"></div>
+                            <div class="hero-content">
+                                <h1 class="hero-title">Style That Defines You</h1>
+                                <p class="hero-description">Discover fashion designed to fit your lifestyle.</p>
+                                <a href="shop.html" class="hero-btn">Explore</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ================= SERVICES SECTION ================= -->
+        <section class="services-section">
+            <div class="container">
+                <h2 class="section-title">Our Services</h2>
+                <div class="services-grid">
+                    <!-- Service 1 -->
+                    <div class="service-card">
+                        <div class="service-icon">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M14.121 14.121a3 3 0 104.243 4.243M9 15l6-6m0 0L9 3m6 6l-6 6"/>
+                            </svg>
+                        </div>
+                        <h3 class="service-title">Custom Tailoring</h3>
+                        <p class="service-description">Perfect-fit garments crafted just for you.</p>
+                    </div>
+
+                    <!-- Service 2 -->
+                    <div class="service-card">
+                        <div class="service-icon secondary">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M20 7l-8-4-8 4m16 0l-8 4m8-4v10l-8 4m0-10L4 7m8 4v10M4 7v10l8 4"/>
+                            </svg>
+                        </div>
+                        <h3 class="service-title">Premium Fabrics</h3>
+                        <p class="service-description">High-quality materials sourced globally.</p>
+                    </div>
+
+                    <!-- Service 3 -->
+                    <div class="service-card">
+                        <div class="service-icon accent">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M9 17a2 2 0 11-4 0 2 2 0 014 0zM19 17a2 2 0 11-4 0 2 2 0 014 0z"/>
+                                <path d="M13 16V6a1 1 0 00-1-1H4a1 1 0 00-1 1v10a1 1 0 001 1h1m8-1a1 1 0 01-1 1H9m4-1V8a1 1 0 011-1h2.586a1 1 0 01.707.293l3.414 3.414a1 1 0 01.293.707V16a1 1 0 01-1 1h-1m-6-1a1 1 0 001 1h1M5 17a2 2 0 104 0m-4 0a2 2 0 114 0m6 0a2 2 0 104 0m-4 0a2 2 0 114 0"/>
+                            </svg>
+                        </div>
+                        <h3 class="service-title">Fast Delivery</h3>
+                        <p class="service-description">Timely delivery without compromising quality.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ================= WHY CHOOSE US ================= -->
+        <section class="why-choose-section">
+            <div class="container">
+                <h2 class="section-title">Why Choose Us</h2>
+                
+                <!-- Feature 1 -->
+                <div class="feature-card">
+                    <div class="feature-image">
+                        <img src="images/bg-4.png" alt="Expert Craftsmanship">
+                        <div class="image-overlay"></div>
+                    </div>
+                    <div class="feature-content">
+                        <div class="feature-icon">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"/>
+                            </svg>
+                        </div>
+                        <h3 class="feature-title">Expert Craftsmanship</h3>
+                        <p class="feature-description">Our experienced tailors deliver exceptional quality with attention to every detail.</p>
+                        <a href="shop.html" class="feature-btn">Order Now</a>
+                    </div>
+                </div>
+
+                <!-- Feature 2 -->
+                <div class="feature-card reverse">
+                    <div class="feature-content">
+                        <div class="feature-icon purple">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"/>
+                            </svg>
+                        </div>
+                        <h3 class="feature-title">Perfect Fit Guarantee</h3>
+                        <p class="feature-description">Every garment is measured, fitted, and finished for a flawless fit.</p>
+                        <a href="shop.html" class="feature-btn">Explore Now</a>
+                    </div>
+                    <div class="feature-image">
+                        <img src="images/bg-5.png" alt="Perfect Fit Guarantee">
+                        <div class="image-overlay"></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ================= TESTIMONIALS ================= -->
+        <section class="testimonials-section">
+            <div class="container">
+                <h2 class="section-title">Our Testimonials</h2>
+                
+                <div class="swiper testimonials-swiper">
+                    <div class="swiper-wrapper">
+                        <!-- Testimonial 1 -->
+                        <div class="swiper-slide">
+                            <div class="testimonial-card">
+                                <p class="testimonial-text">"Amazing craftsmanship! My suit fits perfectly and feels premium."</p>
+                                <div class="testimonial-author">
+                                    <img src="https://randomuser.me/api/portraits/men/32.jpg" alt="Ahmed Hassan">
+                                    <span>Ahmed Hassan</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Testimonial 2 -->
+                        <div class="swiper-slide">
+                            <div class="testimonial-card">
+                                <p class="testimonial-text">"Fast delivery and excellent quality. Highly recommended!"</p>
+                                <div class="testimonial-author">
+                                    <img src="https://randomuser.me/api/portraits/women/44.jpg" alt="Sarah Johnson">
+                                    <span>Sarah Johnson</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Testimonial 3 -->
+                        <div class="swiper-slide">
+                            <div class="testimonial-card">
+                                <p class="testimonial-text">"TailorShop exceeded my expectations in every way."</p>
+                                <div class="testimonial-author">
+                                    <img src="https://randomuser.me/api/portraits/men/65.jpg" alt="Michael Brown">
+                                    <span>Michael Brown</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Navigation Controls -->
+                <div class="testimonials-controls">
+                    <button class="control-btn prev-testimonial">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M15 18l-6-6 6-6"/>
+                        </svg>
+                    </button>
+                    <button class="control-btn next-testimonial">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M9 18l6-6-6-6"/>
+                        </svg>
+                    </button>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- ================= FOOTER ================= -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <!-- Brand and Contact -->
+                <div class="footer-brand">
+                    <a href="index.html" class="footer-logo">
+                        Tailor<span class="highlight">Shop</span>
+                    </a>
+                    <div class="contact-info">
+                        <a href="mailto:info@tailorshop.com" class="contact-item">
+                            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/>
+                                <path d="M22 6l-10 7L2 6"/>
+                            </svg>
+                            info@tailorshop.com
+                        </a>
+                        <a href="tel:+15551234567" class="contact-item">
+                            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07 19.5 19.5 0 01-6-6 19.79 19.79 0 01-3.07-8.67A2 2 0 014.11 2h3a2 2 0 012 1.72 12.84 12.84 0 00.7 2.81 2 2 0 01-.45 2.11L8.09 9.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45 12.84 12.84 0 002.81.7A2 2 0 0122 16.92z"/>
+                            </svg>
+                            +1 (555) 123-4567
+                        </a>
+                        <div class="contact-item">
+                            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 1118 0z"/>
+                                <path d="M12 13a3 3 0 100-6 3 3 0 000 6z"/>
+                            </svg>
+                            New York, USA
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Company Links -->
+                <div class="footer-links">
+                    <h4 class="footer-title">Company</h4>
+                    <ul>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="#">Careers</a></li>
+                        <li><a href="#">Blog</a></li>
+                    </ul>
+                </div>
+
+                <!-- Support Links -->
+                <div class="footer-links">
+                    <h4 class="footer-title">Support</h4>
+                    <ul>
+                        <li><a href="#">Help Center</a></li>
+                        <li><a href="#">Privacy Policy</a></li>
+                        <li><a href="#">Terms of Service</a></li>
+                    </ul>
+                </div>
+
+                <!-- Social Media -->
+                <div class="social-section">
+                    <h4 class="footer-title">Social Profiles</h4>
+                    <div class="social-icons">
+                        <a href="#" class="social-icon" aria-label="Facebook">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M18 2h-3a5 5 0 00-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 011-1h3z"/>
+                            </svg>
+                        </a>
+                        <a href="#" class="social-icon" aria-label="Twitter">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M23 3a10.9 10.9 0 01-3.14 1.53 4.48 4.48 0 00-7.86 3v1A10.66 10.66 0 013 4s-4 9 5 13a11.64 11.64 0 01-7 2c9 5 20 0 20-11.5a4.5 4.5 0 00-.08-.83A7.72 7.72 0 0023 3z"/>
+                            </svg>
+                        </a>
+                        <a href="#" class="social-icon" aria-label="Instagram">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <rect x="2" y="2" width="20" height="20" rx="5" ry="5"/>
+                                <path d="M16 11.37A4 4 0 1112.63 8 4 4 0 0116 11.37zM17.5 6.5h.01"/>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Copyright -->
+            <div class="copyright">
+                <p>&copy; <span id="currentYear"></span> Tailor<span class="highlight">Shop</span>. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- ================= SCRIPTS ================= -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
